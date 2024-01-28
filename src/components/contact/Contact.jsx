@@ -38,9 +38,11 @@ const Contact = () => {
       )
       .then(
         (result) => {
+          console.log(result);
           setSuccess(true)
         },
         (error) => {
+          console.log(error);
           setError(true);
         }
       );
