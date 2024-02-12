@@ -15,6 +15,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_REACT_ESSENTIALS_88B6F }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ADITYA_MISHRA_PORTFOLIO }}'
           channelId: live
-          projectId: react-essentials-88b6f
+          projectId: aditya-mishra-portfolio

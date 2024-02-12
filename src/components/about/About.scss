@@ -96,9 +96,9 @@
     }
   }
   .listContainer {
-    flex: 2;
+    flex: 4;
     display: flex;
-    max-width: 1366px;
+    // max-width: 1366px;
     margin: auto;
 
     @include mobile {
@@ -107,17 +107,22 @@
     }
 
     .box {
-      padding: 50px;
+      padding: 30px;
       border: 0.5px solid gray;
       display: flex;
+      flex-grow: 1;
       flex-direction: column;
-      justify-content: space-between;
+      // justify-content: space-between;
 
       @include mobile {
         border: none;
         align-items: center;
         gap: 20px;
         padding: 10px;
+      }
+
+      h3 {
+        padding: 10%;
       }
 
       p {
