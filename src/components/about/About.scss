@@ -110,8 +110,11 @@
       padding: 30px;
       border: 0.5px solid gray;
       display: flex;
-      flex-grow: 1;
+      min-width: 25%;
+      flex-grow: 4;
       flex-direction: column;
+      transform: translate(-50%, -50%); // Center the element initially
+      transition: transform 0.15s ease; // Smooth transition for the transform property
       // justify-content: space-between;
 
       @include mobile {
