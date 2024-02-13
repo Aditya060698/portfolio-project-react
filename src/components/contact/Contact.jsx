@@ -31,10 +31,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_61cv88l",
+        "template_80o6gw8",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "2yEqDJvR54OekQ2Ew"
       )
       .then(
         (result) => {
@@ -60,15 +60,15 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <span>mishraditya06@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>Hello street New York</span>
+          <span>Silver Pearl Apartment,Bangalore</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>+1 234 5678</span>
+          <span>9439108489</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
@@ -108,12 +108,15 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
+          <label>Name</label>
           <input type="text" required placeholder="Name" name="name"/>
+          <label>Email</label>
           <input type="email" required placeholder="Email" name="email"/>
+          <label>Message</label>
           <textarea rows={8} placeholder="Message" name="message"/>
           <button>Submit</button>
-          {error && "Error"}
-          {success && "Success"}
+          <alert>{error && "Error"}</alert>
+          <alert>{success && "Success"}</alert>
         </motion.form>
       </div>
     </motion.div>
