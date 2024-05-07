@@ -13,6 +13,7 @@ html {
 body {
   background-color: #0c0c1d;
   color: lightgray;
+  overflow-x: hidden;
 }
 
 a {
@@ -24,7 +25,6 @@ section {
   height: 100vh;
   width: 100vw;
   scroll-snap-align: center;
-  overflow: hidden;
 }
 
 @mixin mobile {
