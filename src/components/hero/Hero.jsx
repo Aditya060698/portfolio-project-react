@@ -49,14 +49,6 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}>Aditya Mishra</motion.h2>
           <motion.h1 variants={textVariants}>FULL STACK ENGINEER</motion.h1>
-          <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              <motion className="link">
-                <motion.a href={"#Services"}>See my Latest Works</motion.a>
-              </motion>
-            </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
-          </motion.div>
           <motion.img
             variants={textVariants}
             animate="scrollButton"
@@ -71,8 +63,9 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Full Stack Engineer
+        REACT AND JAVA SPRING BOOT
       </motion.div>
+      
     </div>
   );
 };

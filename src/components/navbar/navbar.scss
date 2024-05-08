@@ -4,7 +4,7 @@
   height: 100px;
 
   .wrapper {
-    max-width: 1366px;
+    width: 80vw;
     margin: auto;
     display: flex;
     align-items: center;
@@ -15,12 +15,31 @@
       justify-content: flex-end;
       padding: 20px;
     }
+    .span{
+      display: flex;
+    }
 
-    span {
-      font-weight: bold;
-
+    .buttons {
+      display:flex;
+      // width:50vw;
+      // position: absolute;
+      padding: 20px;
+      // justify-content: flex-start;
       @include mobile {
-        display: none;
+        height: 50%;
+        width: 100%;
+        top: unset;
+        bottom: 0;
+      }
+
+      a {
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 8px;
+        background-color: transparent;
+        color: white;
+        margin-right: 20px;
+        font-weight: 300;
       }
     }
 
@@ -28,10 +47,9 @@
       display: flex;
       gap: 20px;
       padding: 10px;
-
       img {
-        width: 18px;
-        height: 18px;
+        width: 28px;
+        height: 28px;
       }
     }
   }

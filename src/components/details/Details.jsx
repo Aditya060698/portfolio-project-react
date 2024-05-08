@@ -9,16 +9,17 @@ const Details = ({title,details,x,y}) => {
   }
   return (
     <motion.div
-      className="box"
+      className=
+      {`box ${isClicked ? 'clicked' : ''}`}
       onClick={handleClick}
-      whileTap={{
-        background: "lightgray",
-        color: "black",
-        scale: "1.2",
-        x:x,
-        y:y,
-        zIndex: "2",
-      }}
+      // whileTap={{
+      //   background: "lightgray",
+      //   color: "black",
+      //   scale: "1.2",
+      //   x:x,
+      //   y:y,
+      //   zIndex: "2",
+      // }}
     //   animate={isClicked ?{
         
     //     background: "lightgray",

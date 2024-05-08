@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { Link } from 'react-router-dom';
 
 const items = [
   {
@@ -49,6 +50,9 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <button>See Demo</button>
+            <a href="https://github.com/Aditya060698/learning-react">
+            <button>GitHub link</button>
+            </a>
           </motion.div>
         </div>
       </div>
@@ -72,7 +76,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Featured Works</h1>
+        <h1>Personal Projects</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (

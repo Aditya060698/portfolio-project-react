@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./parallax.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
+import {ABOUTME, PROJECTS} from "./../../constant"
 
 const Parallax = ({ type }) => {
   const ref = useRef();
@@ -24,10 +25,11 @@ const Parallax = ({ type }) => {
             : "linear-gradient(180deg, #111132, #505064)",
       }}
     >
-      <motion.div style={{ display:"flex",flexDirection:"column"}}>
+      <motion.div style={{ display:"flex",flexDirection:"column", padding:"25%",zIndex:"4"}}>
       <motion.h1 style={{ y: yText }}>
-        {type === "about" ? "About Me" : "My Projects"}
+        {type === "about" ? "About Me" : "Personal Projects"}
       </motion.h1>
+      <motion.p style={{ y: yText }}> {type === "about" ? ABOUTME : PROJECTS} </motion.p>
       </motion.div>
       <motion.div className="mountains"></motion.div>
       <motion.div
